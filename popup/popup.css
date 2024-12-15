@@ -91,7 +91,7 @@ body {
     pointer-events: none; /* 防止干扰二维码扫描 */
 }
 
-/* 其他样式保持不变 */
+/* 其他样式��持不变 */
 .site-info {
     width: 100%;
     text-align: center;

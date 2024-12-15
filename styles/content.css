@@ -1,0 +1,46 @@
+/* 这里可以添加额外的样式，用于覆盖或补充content.js中注入的样式 */ 
+
+/* 补充悬浮图标样式 */
+.qr-floating-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* 二维码容器样式补充 */
+.qr-wrapper {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#qrcode {
+    width: 180px !important;
+    height: 180px !important;
+    margin: 0 auto;
+}
+
+#favicon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+}
+
+.site-info {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#site-title {
+    font-size: 14px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+} 

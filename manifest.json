@@ -16,9 +16,15 @@
       "128": "assets/icons/icon128.png"
     }
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["lib/qrcode.min.js", "scripts/content.js"],
+      "css": ["styles/content.css"]
+    }
+  ],
   "permissions": [
-    "activeTab",
-    "tabs"
+    "activeTab"
   ],
   "host_permissions": [
     "<all_urls>"
