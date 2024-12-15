@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页二维码</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 二维码容器 -->
+        <div class="qrcode-wrapper">
+            <div id="qrcode"></div>
+            <!-- favicon将被插入到二维码中心 -->
+            <div id="favicon-overlay"></div>
+        </div>
+        
+        <!-- 网站信息 -->
+        <div class="site-info">
+            <h1 id="site-title"></h1>
+        </div>
+    </div>
+
+    <!-- 引入二维码生成库 -->
+    <script src="../lib/qrcode.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html> 
