@@ -3,10 +3,23 @@
 <head>
     <title>SVG to PNG Converter</title>
     <style>
+        body {
+            background: #fff;
+            padding: 20px;
+        }
         .icon-container {
             margin: 20px;
             padding: 20px;
             border: 1px solid #ccc;
+            background: #fff;
+            text-align: center;
+        }
+        /* 确保图标背景为白色 */
+        .icon-16, .icon-48, .icon-128 {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #eee;
+            margin: 10px;
         }
         .icon-16 { width: 16px; height: 16px; }
         .icon-48 { width: 48px; height: 48px; }
@@ -16,17 +29,61 @@
 <body>
     <div class="icon-container">
         <h3>16x16:</h3>
-        <img src="assets/icons/icon.svg" class="icon-16">
+        <svg class="icon-16" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                .qr-box { fill: #1A1A1A; }
+                .qr-elements { fill: #00F5FF; filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.8)); }
+            </style>
+            <rect class="qr-box" x="0" y="0" width="128" height="128" rx="16"/>
+            <g class="qr-elements">
+                <rect x="24" y="24" width="24" height="24"/>
+                <rect x="80" y="24" width="24" height="24"/>
+                <rect x="24" y="80" width="24" height="24"/>
+                <rect x="56" y="56" width="16" height="16"/>
+            </g>
+        </svg>
     </div>
     
     <div class="icon-container">
         <h3>48x48:</h3>
-        <img src="assets/icons/icon.svg" class="icon-48">
+        <svg class="icon-48" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                .qr-box { fill: #1A1A1A; }
+                .qr-elements { fill: #00F5FF; filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.8)); }
+            </style>
+            <rect class="qr-box" x="0" y="0" width="128" height="128" rx="16"/>
+            <g class="qr-elements">
+                <rect x="24" y="24" width="24" height="24"/>
+                <rect x="80" y="24" width="24" height="24"/>
+                <rect x="24" y="80" width="24" height="24"/>
+                <rect x="56" y="56" width="16" height="16"/>
+            </g>
+        </svg>
     </div>
     
     <div class="icon-container">
         <h3>128x128:</h3>
-        <img src="assets/icons/icon.svg" class="icon-128">
+        <svg class="icon-128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                .qr-box { fill: #1A1A1A; }
+                .qr-elements { fill: #00F5FF; filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.8)); }
+            </style>
+            <rect class="qr-box" x="0" y="0" width="128" height="128" rx="16"/>
+            <g class="qr-elements">
+                <rect x="24" y="24" width="24" height="24"/>
+                <rect x="80" y="24" width="24" height="24"/>
+                <rect x="24" y="80" width="24" height="24"/>
+                <rect x="56" y="56" width="16" height="16"/>
+            </g>
+        </svg>
     </div>
+
+    <p style="text-align: center; margin-top: 20px;">
+        使用方法：<br>
+        1. 使用系统截图工具（Windows: Win+Shift+S，Mac: Command+Shift+4）<br>
+        2. 分别截取每个尺寸的图标（确保截取的大小正确）<br>
+        3. 将截图保存为PNG格式（icon16.png、icon48.png、icon128.png）<br>
+        4. 保存到assets/icons/目录下
+    </p>
 </body>
 </html> 
